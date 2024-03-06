@@ -1,0 +1,27 @@
+body {
+    background-color: #d7d7d7;
+    color: black;
+    display:block;
+}
+h1{ text-align: center;}
+#container{ width:100%;margin:20px auto;}
+.clearfix{clear:both;}
+footer{float:none; padding:10px;}
+.menu{position: relative; border:3px solid #333; padding:4% 2% 2% 2%; background: #efefef;}
+h2{ position:absolute;top:-20px;right:0px; padding:5px 25px; border-left:3px solid #000;border-bottom:3px solid #000; background:#fff; }
+/* Media query for screens with a maximum width of 768px - for desktop */
+@media only screen and (min-width: 992px) {
+    .menu{ width: calc(85%/3); float:left; margin:0 1% 1% 0;}
+    .menu:nth-child(3){ margin-right:0;}
+  }
+  
+  /* Media query for screens with a maximum width of 576px - for tablet*/
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .menu{ width:43.7%; float:left; margin:1%;}
+    .menu:nth-child(2){ margin-left:0;}
+    .menu:nth-child(3){ width: auto; float:none;clear:both; margin: 0 1%;}
+  }
+ /* Media query for screens with a maximum width of 767px - for mobile*/
+  @media only screen and (max-width: 767px) {
+    .menu{ width: auto;  margin: 20px 0 0 0; padding:8% 4% 4% 4%;}
+  }
